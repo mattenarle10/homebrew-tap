@@ -1,9 +1,9 @@
 cask "marka-md" do
   arch arm: "", intel: "_intel"
 
-  version "1.5.9"
-  sha256 arm:   "b6a6066509310f086d0800f8d5e107d1fad689865f759b8cb75c3715e13ba396",
-         intel: "5ca0bfd4643a415e1300e8f36192831772a576e5acb608ab0155aca11491a20d"
+  version "1.5.16"
+  sha256 arm:   "9ef6dd5c24d7f783c45d0e0e46c845a046c87e83ad8595a544943f02809301a6",
+         intel: "9de3f8ff2e366b67f15ec21c0d6db40c2728eee8aa46845e8497268927353a4f"
 
   url "https://github.com/mattenarle10/markamd/releases/download/v#{version}/marka.md#{arch}.dmg",
       verified: "github.com/mattenarle10/markamd/"
