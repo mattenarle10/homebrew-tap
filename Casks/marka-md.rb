@@ -1,9 +1,9 @@
 cask "marka-md" do
-  arch arm: "", intel: "_intel"
+  arch intel: "_intel"
 
-  version "1.5.16"
-  sha256 arm:   "9ef6dd5c24d7f783c45d0e0e46c845a046c87e83ad8595a544943f02809301a6",
-         intel: "9de3f8ff2e366b67f15ec21c0d6db40c2728eee8aa46845e8497268927353a4f"
+  version "1.7.11"
+  sha256 arm:   "ed0177d09c40a90b384928312339af720a3481c07bd35af560bcb688e5f11a98",
+         intel: "e25889834cec976e1da1988b96c53a3a798ef80214fc93d9e3e576bec49ba9eb"
 
   url "https://github.com/mattenarle10/markamd/releases/download/v#{version}/marka.md#{arch}.dmg",
       verified: "github.com/mattenarle10/markamd/"
@@ -19,7 +19,8 @@ cask "marka-md" do
   auto_updates true
   depends_on macos: :ventura
 
-  app "marka.md.app"
+  app "marka.app"
+  binary "#{appdir}/marka.app/Contents/Resources/cli/marka"
 
   zap trash: [
     "~/Library/Application Support/com.mattenarle.markamd",
